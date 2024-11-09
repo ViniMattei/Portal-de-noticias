@@ -2,6 +2,19 @@
   img {
     height: 100%;
     object-fit: cover;
-    border-radius: 4px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, transparent 0%, #020517 100%);
+    inset: 0;
+    top: 50%;
   }
 }
